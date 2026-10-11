@@ -40,12 +40,17 @@ function showNote(note) {
   list.appendChild(li);
 }
 
+
 function showEmptyState() {
   list.innerHTML = "";
+
   const li = document.createElement("li");
+  li.classList.add("empty-state");
   li.textContent = "No notes yet. Click Load notes or create one.";
+
   list.appendChild(li);
 }
+
 
 function addNoteToTop(note) {
   const li = document.createElement("li");
